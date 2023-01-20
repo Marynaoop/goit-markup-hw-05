@@ -391,14 +391,10 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 16px;
 }
 .footer-messenger-list {
   gap: 16px;
-  padding-left: 100px;
 }
 .footer-messenger-item {
   width: 40px;
@@ -450,7 +446,7 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms linear, box-shadow 250ms linear;
 }
 .prev:hover,
 .prev:focus {
@@ -470,7 +466,8 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: color 250ms linear, background-color 250ms linear,
+    box-shadow 250ms linear;
 }
 .next:hover,
 .next:focus {
