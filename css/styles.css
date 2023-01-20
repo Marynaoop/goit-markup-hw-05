@@ -121,6 +121,9 @@ img {
   transition: color 250ms linear;
   position: relative;
 }
+.current {
+  color: #404bbf;
+}
 .header-link.current::after {
   content: "";
   position: absolute;
@@ -195,8 +198,7 @@ img {
   padding: 16px 32px;
   min-width: 170px;
   margin: 30px auto 0;
-  box-shadow: #404bbf;
-  transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .main-button:hover,
 .main-button:focus {
@@ -297,7 +299,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .messenger-icon {
   fill: #ffffff;
@@ -454,6 +456,7 @@ img {
 .prev:focus {
   background-color: var(--link-color);
   background-color: var(--b-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .next {
   font-family: inherit;
@@ -473,6 +476,7 @@ img {
 .next:focus {
   background-color: var(--b-color);
   color: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .s-container {
   padding-top: 96px;
@@ -495,12 +499,17 @@ img {
   border: 0, 5px solid #e7e9fc;
   width: 360px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, transform 230ms linear;
 }
 .list-box:hover .top-text {
+  transform: translateY(0);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.list-box:hover {
   transform: translateY(0);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .img-top-text {
   position: relative;
